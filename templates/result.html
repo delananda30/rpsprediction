@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;   
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        #result {
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .sec-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .inner-content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 2px solid #373232;
+            margin: 20px 120px 0 120px;
+        }
+
+        p {
+            margin: unset;
+            padding: none;
+            color: #333;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        p.font-size-25 {
+            font-size: 25px;
+            color: #000000;
+        }
+
+        p.font-size-medium {
+            font-size: 18px;
+            color: #000000;
+            margin-top: 10px;
+        }
+
+        #myBar {
+            height: 100%;
+            width: 0;
+            background-color: #333;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+            transition: width 0.5s;
+        }
+
+        .sidebar-content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img.img-fluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        p.img-description {
+            font-size: 20px;
+            color: #0e0d0d;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact-section" id="result">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12 content-column">
+                    <div class="inner-content">
+                        <div class="contact-form-area">
+                            <p class="font-size-25">{{ model }} MODEL</p>
+                            <p class="font-size-medium">Predicted Label is: {{ labels[pred] }}</p>
+                            Accuracy: {{ (probs|max) }}% | Prediction Time: {{ (run_time) }} second
+                            <input type="hidden" id="probability" value={{(probs|max)}}>
+                            <div id="myProgress">
+                                <div id="myBar"> 
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 sidebar-column">
+                                <div class="sidebar-content">
+                                    <img src="{{ url_for('static', filename=img) }}" alt="" class="img-fluid">
+                                    <p class="img-description">Input Image</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

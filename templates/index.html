@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RPS Prediction</title>
+    
+    <style>
+        .title {
+            font-weight: bold;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px 0 50px 0;
+        }
+
+        .contact-section {
+            padding: 50px 0 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 100px 0 100px;
+        }
+
+        .sec-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #b47e37;
+            background: #000000;
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .login100-form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: 100px 400px 0 400px;
+            padding: 20px 20px 20px 20px;
+            border: 2px solid #373232;
+        }
+
+        .input100 {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .input100:focus {
+            border-color: #000000;
+        }
+
+        .input100::placeholder {
+            color: #999;
+        }
+
+        .symbol-input100 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            color: #ccc;
+        }
+
+        .login100-form-btn {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login100-form-btn:hover {
+            background-color: #f7cde0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact-section" id="predict1">
+          
+        <form class="login100-form validate-form" action="/predict" method="post" enctype="multipart/form-data">
+
+            <div class="wrap-input100 validate-input" data-validate="Image file is required" id="input">
+                <div class="title">
+                    RPS PREDICTION
+                </div>
+                <div class="image-preview" id="image-preview-container" style="display: none;">
+                    <img id="image-preview" src="#" alt="Preview">
+                </div>
+
+                <input class="input100" id="image-source" name="file" type="file"
+                    alt="Input Image" accept="image/jpeg,image/jpg,image/png" required onchange="previewImage();">
+
+                <span class="focus-input100"></span>
+
+                <span class="symbol-input100">
+                    <i class="fa fa-file" aria-hidden="true"></i>
+                </span>
+            </div>
+
+            <div class="container-login100-form-btn">
+                <button class="login100-form-btn" type="submit">Predict</button>
+            </div>
+        </form>
+    </section>
+
+    <script>
+        function previewImage() {
+            var fileInput = document.getElementById('image-source');
+            var imagePreviewContainer = document.getElementById('image-preview-container');
+            var imagePreview = document.getElementById('image-preview');
+
+            var file = fileInput.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+                imagePreviewContainer.style.display = 'block';
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.src = '#';
+                imagePreviewContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
