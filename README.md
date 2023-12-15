@@ -30,23 +30,6 @@ Dataset ini telah dibagi menjadi tiga bagian: train, validation, dan test, denga
    - `gunting/`: Citra tangan dengan gestur gunting untuk pengujian.
    - `kertas/`: Citra tangan dengan gestur kertas untuk pengujian.
 
-### Rasio Pembagian
-
-- **Train:**
-  - Batu: 567 citra (75% dari 756 citra)
-  - Gunting: 567 citra (75% dari 756 citra)
-  - Kertas: 567 citra (75% dari 756 citra)
-
-- **Validation:**
-  - Batu: 113 citra (15% dari 756 citra)
-  - Gunting: 113 citra (15% dari 756 citra)
-  - Kertas: 113 citra (15% dari 756 citra)
-
-- **Test:**
-  - Batu: 84 citra (10% dari 840 citra)
-  - Gunting: 84 citra (10% dari 840 citra)
-  - Kertas: 84 citra (10% dari 840 citra)
-
 ## Model VGG19
 VGG19 (Visual Geometry Group 19) adalah salah satu arsitektur model Deep Convolutional Neural Network (CNN) yang dikembangkan oleh Karen Simonyan dan Andrew Zisserman pada tahun 2014. Model ini memiliki 19 layer (hence the name) dan sangat terkenal karena keefektifannya dalam mengatasi tugas pengenalan gambar.
 
