@@ -8,6 +8,8 @@ Proyek ini terbagi menjadi dua bagian utama:
 2. **Deploy dengan Flask:** Model yang sudah dilatih kemudian di-deploy menggunakan Flask, menciptakan aplikasi web di mana pengguna dapat mengunggah gambar gestur tangan, dan model akan memprediksi apakah itu batu, gunting, atau kertas.
 
 ## Dataset
+![image](https://github.com/delananda30/rpsprediction/assets/71807981/00a78342-7e2a-41b7-9759-2b7242850c84)
+
 Dataset yang digunakan dalam proyek ini adalah kumpulan citra gestur tangan yang menunjukkan tiga kategori: batu, gunting, dan kertas. Citra-citra ini merupakan representasi visual dari berbagai pose tangan yang digunakan untuk melatih model prediksi.
 
 ### Struktur Dataset
@@ -52,7 +54,21 @@ Dengan menggunakan konsep transfer learning dan model VGG19, model ini mampu men
 
 ## Web
 <img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/f128877e-bbab-4e7f-926c-dd7d7cdf6b38">
-<img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/a4ebb029-dc5f-4e96-a677-7e201024ef28">
+<img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/744c8b92-9560-4528-9d62-f35ec814fc1f">
+
+### Getting Started
+Install dependencies:
+
+```bash
+  pip install -r requirements.txt
+```
+
+Run the Flask application:
+
+```bash
+  flask run
+```
+Buka peramban web Anda dan buka http://localhost:5000 untuk berinteraksi dengan sistem prediksi RPS.
 
 ## Authors
 - [Dela Ananda Setyarini](https://github.com/delananda30)
