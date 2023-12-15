@@ -50,3 +50,5 @@ VGG19 (Visual Geometry Group 19) adalah salah satu arsitektur model Deep Convolu
 
 Dengan menggunakan konsep transfer learning dan model VGG19, model ini mampu mencapai akurasi sebesar 98% setelah dilatih dengan data pelatihan dan divalidasi dengan data validasi. Akurasi yang tinggi ini menunjukkan kemampuan model untuk dengan baik mengenali dan mengklasifikasikan gestur tangan batu, gunting, dan kertas pada permainan Batu-Gunting-Kertas.
 
+## Authors
+- [Dela Ananda Setyarini](https://github.com/delananda30)
