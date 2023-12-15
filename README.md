@@ -58,13 +58,11 @@ Dengan menggunakan konsep transfer learning dan model VGG19, model ini mampu men
 
 ### Getting Started
 Install dependencies:
-
 ```bash
   pip install -r requirements.txt
 ```
 
 Run the Flask application:
-
 ```bash
   flask run
 ```
