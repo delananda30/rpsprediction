@@ -7,9 +7,9 @@ Repositori ini berisi proyek menggunakan model VGG19 yang telah dilatih sebelumn
 Dalam proyek ini, digunakan dataset berupa kumpulan citra gestur tangan yang mencakup tiga kategori utama: batu, gunting, dan kertas. Citra-citra ini merepresentasikan visual dari berbagai pose tangan, yang menjadi dasar pelatihan untuk model prediksi.
 
 Dataset pelatihan terdiri dari 2520 sampel, yang dibagi menjadi subset training (75%), validation (15%), dan test (10%). Rincian jumlah data untuk masing-masing subset adalah sebagai berikut:
-- **Training Set**: 1890 data
-- **Validation Set**: 378 data
-- **Test Set**: 252 data
+- Training Set: 1890 data
+- Validation Set: 378 data
+- Test Set: 252 data
 
 ![image](https://github.com/delananda30/rpsprediction/assets/71807981/67d18abe-44df-4c38-be0a-d5ba1584253a)
 
