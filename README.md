@@ -58,6 +58,8 @@ Epoch 1/10
 Epoch 10/10
 60/60 [==============================] - 46s 768ms/step - loss: 0.1384 - accuracy: 0.9614 - val_loss: 0.1320 - val_accuracy: 0.9683
 ```
+Berikut adalah grafik untuk menunjukkan perubahan loss dan akurasi pada setiap epoch selama pelatihan:
+![image](https://github.com/delananda30/rpsprediction/assets/71807981/7569f7ae-9d8a-448a-8aa8-d6ff49e099ec)
 
 Hasil evaluasi pada subset test menunjukkan tingkat akurasi yang tinggi:
 ```plaintext
