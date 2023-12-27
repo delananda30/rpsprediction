@@ -41,6 +41,22 @@ Trainable params: 66,051 (258.01 KB)
 Non-trainable params: 20,024,384 (76.39 MB)
 _________________________________________________________________
 ```
+Model ini memiliki tiga lapisan: VGG19 sebagai base model, lapisan Global Average Pooling untuk meratakan output, dan dua lapisan Dense (fully connected) untuk melakukan klasifikasi tiga kategori gestur tangan: batu, gunting, dan kertas.
+Model dilatih dengan optimizer Adam dan fungsi loss categorical_crossentropy. Proses pelatihan dilakukan selama 10 epoch. Berikut adalah beberapa hasil pelatihan:
+
+```plaintext
+Epoch 1/10
+60/60 [==============================] - 63s 885ms/step - loss: 0.9585 - accuracy: 0.6021 - val_loss: 0.7845 - val_accuracy: 0.7963
+...
+Epoch 10/10
+60/60 [==============================] - 46s 768ms/step - loss: 0.1384 - accuracy: 0.9614 - val_loss: 0.1320 - val_accuracy: 0.9683
+```
+
+Hasil evaluasi pada subset test menunjukkan tingkat akurasi yang tinggi:
+```plaintext
+Test Loss: 0.08905871212482452
+Test Accuracy: 0.9920634627342224
+```
 
 Dengan menggunakan konsep transfer learning dan model VGG19, model ini mampu mencapai akurasi sebesar 99% setelah dilatih dengan data pelatihan dan divalidasi dengan data validasi. Akurasi yang tinggi ini menunjukkan kemampuan model untuk dengan baik mengenali dan mengklasifikasikan gestur tangan batu, gunting, dan kertas pada permainan Batu-Gunting-Kertas.
 
