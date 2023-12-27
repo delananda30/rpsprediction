@@ -72,9 +72,9 @@ Classification Report:
    macro avg       0.99      0.99      0.99       252
 weighted avg       0.99      0.99      0.99       252
 ```
-Model memiliki kinerja yang sangat baik dengan tingkat akurasi di atas 99% pada subset test. Hal ini dapat diinterpretasikan dari hasil presisi, recall, dan f1-score yang tinggi untuk setiap kelas.
+Classification report pada subset test menegaskan kinerja yang sangat baik, dengan presisi, recall, dan f1-score di atas 99% untuk setiap kelas (paper, rock, scissors).
 
-Dengan menggunakan konsep transfer learning dan model VGG19, model ini mampu mencapai akurasi sebesar 99% setelah dilatih dengan data pelatihan dan divalidasi dengan data validasi. Akurasi yang tinggi ini menunjukkan kemampuan model untuk dengan baik mengenali dan mengklasifikasikan gestur tangan batu, gunting, dan kertas pada permainan Batu-Gunting-Kertas.
+Secara keseluruhan, model ini menggunakan konsep transfer learning dan arsitektur VGG19 untuk mencapai akurasi di atas 99% setelah pelatihan dan validasi. Keberhasilan ini menunjukkan kemampuan model dalam mengklasifikasikan gestur tangan pada permainan Batu-Gunting-Kertas.
 
 ## Aplikasi Web
 <img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/f128877e-bbab-4e7f-926c-dd7d7cdf6b38">
