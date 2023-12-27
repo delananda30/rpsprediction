@@ -43,6 +43,9 @@ _________________________________________________________________
 ```
 Struktur model terdiri dari tiga lapisan: VGG19 sebagai base model, lapisan Global Average Pooling untuk meratakan output, dan dua lapisan Dense (fully connected) untuk klasifikasi tiga kategori gestur tangan: batu, gunting, dan kertas.
 
+![image](https://github.com/delananda30/rpsprediction/assets/71807981/aa17a316-774b-4d4f-9792-0a567b90c5d3)
+
+
 Model dilatih dengan optimizer Adam dan fungsi loss categorical_crossentropy. Proses pelatihan dilakukan selama 10 epoch. Berikut adalah beberapa hasil pelatihan:
 
 ```plaintext
