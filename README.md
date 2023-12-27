@@ -84,8 +84,11 @@ Classification report pada subset test menegaskan kinerja yang sangat baik, deng
 Secara keseluruhan, model ini menggunakan konsep transfer learning dan arsitektur VGG19 untuk mencapai akurasi di atas 99% setelah pelatihan dan validasi. Keberhasilan ini menunjukkan kemampuan model dalam mengklasifikasikan gestur tangan pada permainan Batu-Gunting-Kertas.
 
 ## Aplikasi Web
-<img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/f128877e-bbab-4e7f-926c-dd7d7cdf6b38">
-<img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/744c8b92-9560-4528-9d62-f35ec814fc1f">
+
+<img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/57c9c70a-0a44-4fff-a404-8ba100cbcabd">
+
+<img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/bce4a427-45e2-40e0-bcbd-859b71a5ad02">
+
 
 ### Getting Started
 Install dependencies:
