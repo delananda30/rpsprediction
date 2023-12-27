@@ -8,7 +8,7 @@ Proyek ini terbagi menjadi dua bagian utama:
 2. **Deploy dengan Flask:** Model yang sudah dilatih kemudian di-deploy menggunakan Flask, menciptakan aplikasi web di mana pengguna dapat mengunggah gambar gestur tangan, dan model akan memprediksi apakah itu batu, gunting, atau kertas.
 
 ## Dataset
-(![image](https://github.com/delananda30/rpsprediction/assets/71807981/d55bb033-48a4-42ff-b29d-08ddfab5eafc))
+![image](https://github.com/delananda30/rpsprediction/assets/71807981/d55bb033-48a4-42ff-b29d-08ddfab5eafc)
 
 Dataset yang digunakan dalam proyek ini adalah kumpulan citra gestur tangan yang menunjukkan tiga kategori: batu, gunting, dan kertas. Citra-citra ini merupakan representasi visual dari berbagai pose tangan yang digunakan untuk melatih model prediksi.
 
