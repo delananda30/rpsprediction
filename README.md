@@ -21,6 +21,7 @@ VGG19 (Visual Geometry Group 19) adalah salah satu arsitektur model Deep Convolu
 Model ini menggunakan arsitektur VGG19 sebagai base model. Arsitektur VGG19 telah dilatih sebelumnya dengan bobot dari dataset ImageNet. Selanjutnya, lapisan fully connected pada bagian atas (include_top=False) dihapus dan diganti dengan lapisan baru yang sesuai dengan tujuan proyek, yaitu prediksi gestur tangan RPS.
 
 Berikut adalah struktur model:
+```plaintext
 Model: "sequential"
 _________________________________________________________________
 Layer (type)                Output Shape              Param #   
@@ -39,7 +40,7 @@ Total params: 20,090,435 (76.64 MB)
 Trainable params: 66,051 (258.01 KB)
 Non-trainable params: 20,024,384 (76.39 MB)
 _________________________________________________________________
-
+```
 
 Dengan menggunakan konsep transfer learning dan model VGG19, model ini mampu mencapai akurasi sebesar 99% setelah dilatih dengan data pelatihan dan divalidasi dengan data validasi. Akurasi yang tinggi ini menunjukkan kemampuan model untuk dengan baik mengenali dan mengklasifikasikan gestur tangan batu, gunting, dan kertas pada permainan Batu-Gunting-Kertas.
 
