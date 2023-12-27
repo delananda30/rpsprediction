@@ -18,7 +18,7 @@ Untuk memperkaya dataset, dilakukan augmentasi dengan mengaplikasikan variasi ga
 ## Model
 VGG19 (Visual Geometry Group 19) adalah salah satu arsitektur model Deep Convolutional Neural Network (CNN) yang dikembangkan oleh Karen Simonyan dan Andrew Zisserman pada tahun 2014. Model ini memiliki 19 layer (hence the name) dan sangat terkenal karena keefektifannya dalam mengatasi tugas pengenalan gambar.
 
-Model ini menggunakan arsitektur VGG19 sebagai base model. Arsitektur VGG19 telah dilatih sebelumnya dengan bobot dari dataset ImageNet. Selanjutnya, lapisan fully connected pada bagian atas (include_top=False) dihapus dan diganti dengan lapisan baru yang sesuai dengan tujuan proyek, yaitu prediksi gestur tangan RPS.
+Base model menggunakan arsitektur VGG19 yang telah dilatih sebelumnya dengan bobot dari dataset ImageNet. Lapisan fully connected pada bagian atas dihapus dan diganti dengan lapisan baru untuk tujuan proyek, yaitu prediksi gestur tangan RPS.
 
 Berikut adalah struktur model:
 ```plaintext
@@ -41,7 +41,8 @@ Trainable params: 66,051 (258.01 KB)
 Non-trainable params: 20,024,384 (76.39 MB)
 _________________________________________________________________
 ```
-Model ini memiliki tiga lapisan: VGG19 sebagai base model, lapisan Global Average Pooling untuk meratakan output, dan dua lapisan Dense (fully connected) untuk melakukan klasifikasi tiga kategori gestur tangan: batu, gunting, dan kertas.
+Struktur model terdiri dari tiga lapisan: VGG19 sebagai base model, lapisan Global Average Pooling untuk meratakan output, dan dua lapisan Dense (fully connected) untuk klasifikasi tiga kategori gestur tangan: batu, gunting, dan kertas.
+
 Model dilatih dengan optimizer Adam dan fungsi loss categorical_crossentropy. Proses pelatihan dilakukan selama 10 epoch. Berikut adalah beberapa hasil pelatihan:
 
 ```plaintext
@@ -57,6 +58,21 @@ Hasil evaluasi pada subset test menunjukkan tingkat akurasi yang tinggi:
 Test Loss: 0.08905871212482452
 Test Accuracy: 0.9920634627342224
 ```
+Model dievaluasi lebih lanjut dengan melakukan prediksi pada subset test dan menghasilkan classification report:
+
+```plaintext
+Classification Report:
+              precision    recall  f1-score   support
+
+       paper       0.99      0.99      0.99        84
+        rock       1.00      0.99      0.99        84
+    scissors       0.99      1.00      0.99        84
+
+    accuracy                           0.99       252
+   macro avg       0.99      0.99      0.99       252
+weighted avg       0.99      0.99      0.99       252
+```
+Model memiliki kinerja yang sangat baik dengan tingkat akurasi di atas 99% pada subset test. Hal ini dapat diinterpretasikan dari hasil presisi, recall, dan f1-score yang tinggi untuk setiap kelas.
 
 Dengan menggunakan konsep transfer learning dan model VGG19, model ini mampu mencapai akurasi sebesar 99% setelah dilatih dengan data pelatihan dan divalidasi dengan data validasi. Akurasi yang tinggi ini menunjukkan kemampuan model untuk dengan baik mengenali dan mengklasifikasikan gestur tangan batu, gunting, dan kertas pada permainan Batu-Gunting-Kertas.
 
