@@ -67,7 +67,6 @@ Test Accuracy: 0.9920634627342224
 Model dievaluasi lebih lanjut dengan melakukan prediksi pada subset test dan menghasilkan classification report:
 
 ```plaintext
-Classification Report:
               precision    recall  f1-score   support
 
        paper       0.99      0.99      0.99        84
