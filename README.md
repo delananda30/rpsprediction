@@ -15,24 +15,6 @@ Dataset pelatihan terdiri dari 2520 sampel, yang dibagi menjadi subset training 
 
 Untuk memperkaya dataset, dilakukan augmentasi dengan mengaplikasikan variasi gambar. Tujuan dari augmentasi adalah membantu model untuk lebih baik dalam mengenali pola yang berbeda dalam kelas-kelas tersebut. Proses augmentasi diimplementasikan untuk memastikan bahwa model tidak hanya belajar dari contoh yang sama tetapi juga mampu mengatasi variasi yang mungkin terjadi dalam situasi dunia nyata.
 
-### Struktur Dataset
-Dataset ini telah dibagi menjadi tiga bagian: train, validation, dan test, dengan masing-masing kategori (batu, gunting, kertas). Pembagian dataset mengikuti rasio 75% untuk pelatihan, 15% untuk validasi, dan 10% untuk pengujian. Total gambar dalam dataset ini adalah 2520.
-
-1. **Direktori Train:**
-   - `batu/`: Citra tangan dengan gestur batu untuk pelatihan.
-   - `gunting/`: Citra tangan dengan gestur gunting untuk pelatihan.
-   - `kertas/`: Citra tangan dengan gestur kertas untuk pelatihan.
-
-2. **Direktori Validation:**
-   - `batu/`: Citra tangan dengan gestur batu untuk validasi.
-   - `gunting/`: Citra tangan dengan gestur gunting untuk validasi.
-   - `kertas/`: Citra tangan dengan gestur kertas untuk validasi.
-
-3. **Direktori Test:**
-   - `batu/`: Citra tangan dengan gestur batu untuk pengujian.
-   - `gunting/`: Citra tangan dengan gestur gunting untuk pengujian.
-   - `kertas/`: Citra tangan dengan gestur kertas untuk pengujian.
-
 ## Model VGG19
 VGG19 (Visual Geometry Group 19) adalah salah satu arsitektur model Deep Convolutional Neural Network (CNN) yang dikembangkan oleh Karen Simonyan dan Andrew Zisserman pada tahun 2014. Model ini memiliki 19 layer (hence the name) dan sangat terkenal karena keefektifannya dalam mengatasi tugas pengenalan gambar.
 
