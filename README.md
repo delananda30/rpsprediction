@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors (RPS) Prediction using VGG19 Model
+![image](https://github.com/delananda30/rpsprediction/assets/71807981/7106efab-d6b0-48a4-87e8-6214808d8062)![image](https://github.com/delananda30/rpsprediction/assets/71807981/c5ddd6c7-d317-4d0c-9735-3c4847ffda96)# Rock-Paper-Scissors (RPS) Prediction using VGG19 Model
 
 Repositori ini berisi proyek yang memanfaatkan model VGG19 yang telah dilatih sebelumnya untuk memprediksi hasil gestur tangan Batu-Gunting-Kertas (RPS). Proyek ini juga mencakup penerapan model menggunakan Flask, yang memungkinkan pengguna berinteraksi dengan sistem prediksi melalui antarmuka web.
 
@@ -8,7 +8,7 @@ Proyek ini terbagi menjadi dua bagian utama:
 2. **Deploy dengan Flask:** Model yang sudah dilatih kemudian di-deploy menggunakan Flask, menciptakan aplikasi web di mana pengguna dapat mengunggah gambar gestur tangan, dan model akan memprediksi apakah itu batu, gunting, atau kertas.
 
 ## Dataset
-![image](https://github.com/delananda30/rpsprediction/assets/71807981/00a78342-7e2a-41b7-9759-2b7242850c84)
+(![image](https://github.com/delananda30/rpsprediction/assets/71807981/d55bb033-48a4-42ff-b29d-08ddfab5eafc))
 
 Dataset yang digunakan dalam proyek ini adalah kumpulan citra gestur tangan yang menunjukkan tiga kategori: batu, gunting, dan kertas. Citra-citra ini merupakan representasi visual dari berbagai pose tangan yang digunakan untuk melatih model prediksi.
 
