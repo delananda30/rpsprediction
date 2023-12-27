@@ -15,10 +15,33 @@ Dataset pelatihan terdiri dari 2520 sampel, yang dibagi menjadi subset training 
 
 Untuk memperkaya dataset, dilakukan augmentasi dengan mengaplikasikan variasi gambar. Tujuan dari augmentasi adalah membantu model untuk lebih baik dalam mengenali pola yang berbeda dalam kelas-kelas tersebut. Proses augmentasi diimplementasikan untuk memastikan bahwa model tidak hanya belajar dari contoh yang sama tetapi juga mampu mengatasi variasi yang mungkin terjadi dalam situasi dunia nyata.
 
-## Model VGG19
+## Model
 VGG19 (Visual Geometry Group 19) adalah salah satu arsitektur model Deep Convolutional Neural Network (CNN) yang dikembangkan oleh Karen Simonyan dan Andrew Zisserman pada tahun 2014. Model ini memiliki 19 layer (hence the name) dan sangat terkenal karena keefektifannya dalam mengatasi tugas pengenalan gambar.
 
-Dengan menggunakan konsep transfer learning dan model VGG19, model ini mampu mencapai akurasi sebesar 98% setelah dilatih dengan data pelatihan dan divalidasi dengan data validasi. Akurasi yang tinggi ini menunjukkan kemampuan model untuk dengan baik mengenali dan mengklasifikasikan gestur tangan batu, gunting, dan kertas pada permainan Batu-Gunting-Kertas.
+Model ini menggunakan arsitektur VGG19 sebagai base model. Arsitektur VGG19 telah dilatih sebelumnya dengan bobot dari dataset ImageNet. Selanjutnya, lapisan fully connected pada bagian atas (include_top=False) dihapus dan diganti dengan lapisan baru yang sesuai dengan tujuan proyek, yaitu prediksi gestur tangan RPS.
+
+Berikut adalah struktur model:
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                Output Shape              Param #   
+=================================================================
+vgg19 (Functional)          (None, 7, 7, 512)         20024384  
+                                                                 
+global_average_pooling2d (  (None, 512)               0         
+GlobalAveragePooling2D)                                         
+                                                                 
+dense (Dense)               (None, 128)               65664     
+                                                                 
+dense_1 (Dense)             (None, 3)                 387       
+                                                                 
+=================================================================
+Total params: 20,090,435 (76.64 MB)
+Trainable params: 66,051 (258.01 KB)
+Non-trainable params: 20,024,384 (76.39 MB)
+_________________________________________________________________
+
+
+Dengan menggunakan konsep transfer learning dan model VGG19, model ini mampu mencapai akurasi sebesar 99% setelah dilatih dengan data pelatihan dan divalidasi dengan data validasi. Akurasi yang tinggi ini menunjukkan kemampuan model untuk dengan baik mengenali dan mengklasifikasikan gestur tangan batu, gunting, dan kertas pada permainan Batu-Gunting-Kertas.
 
 ## Aplikasi Web
 <img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/f128877e-bbab-4e7f-926c-dd7d7cdf6b38">
