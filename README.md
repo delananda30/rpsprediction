@@ -1,18 +1,19 @@
 # RPS Prediction using VGG19 Model
+
 Repositori ini berisi proyek menggunakan model VGG19 yang telah dilatih sebelumnya untuk memprediksi gestur tangan Batu-Gunting-Kertas (RPS). Proyek ini juga mencakup penerapan model menggunakan Flask, yang memungkinkan pengguna berinteraksi dengan sistem prediksi melalui antarmuka web.
 
 ## Dataset
 
-![image](https://github.com/delananda30/rpsprediction/assets/71807981/274e1e6e-ab01-4fdb-b9a8-8ba6467647d4)
+![Dataset](https://github.com/delananda30/rpsprediction/assets/71807981/274e1e6e-ab01-4fdb-b9a8-8ba6467647d4)
 
 Dalam proyek ini, digunakan dataset berupa kumpulan citra gestur tangan yang mencakup tiga kategori utama: batu, gunting, dan kertas. Citra-citra ini merepresentasikan visual dari berbagai pose tangan, yang menjadi dasar pelatihan untuk model prediksi.
 
 Dataset pelatihan terdiri dari 2520 sampel, yang dibagi menjadi subset training (75%), validation (15%), dan test (10%). Rincian jumlah data untuk masing-masing subset adalah sebagai berikut:
-- Training Set: 1890 data
-- Validation Set: 378 data
-- Test Set: 252 data
+- **Training Set**: 1890 data
+- **Validation Set**: 378 data
+- **Test Set**: 252 data
 
-![image](https://github.com/delananda30/rpsprediction/assets/71807981/67d18abe-44df-4c38-be0a-d5ba1584253a)
+![Augmentasi](https://github.com/delananda30/rpsprediction/assets/71807981/67d18abe-44df-4c38-be0a-d5ba1584253a)
 
 Untuk memperkaya dataset, dilakukan augmentasi dengan mengaplikasikan variasi gambar. Tujuan dari augmentasi adalah membantu model untuk lebih baik dalam mengenali pola yang berbeda dalam kelas-kelas tersebut. Proses augmentasi diimplementasikan untuk memastikan bahwa model tidak hanya belajar dari contoh yang sama tetapi juga mampu mengatasi variasi yang mungkin terjadi dalam situasi dunia nyata.
 
@@ -45,9 +46,8 @@ _________________________________________________________________
 Struktur model ini terdiri dari tiga lapisan utama, yaitu VGG19 sebagai base model, lapisan Global Average Pooling untuk meratakan output, dan dua lapisan Dense (fully connected) untuk klasifikasi tiga kategori gestur tangan: batu, gunting, dan kertas.
 
 <p align="center">
-  <img src="https://github.com/delananda30/rpsprediction/assets/71807981/aa17a316-774b-4d4f-9792-0a567b90c5d3" alt="Nama Deskripsi Gambar">
+  <img src="https://github.com/delananda30/rpsprediction/assets/71807981/aa17a316-774b-4d4f-9792-0a567b90c5d3" alt="Plot Model">
 </p>
-
 
 Visualisasi plot model memberikan gambaran intuitif mengenai arsitektur dan hubungan antar lapisan dalam model tersebut.
 
@@ -61,7 +61,7 @@ Epoch 10/10
 60/60 [==============================] - 46s 768ms/step - loss: 0.1384 - accuracy: 0.9614 - val_loss: 0.1320 - val_accuracy: 0.9683
 ```
 Berikut adalah grafik untuk menunjukkan perubahan loss dan akurasi pada setiap epoch selama pelatihan:
-![image](https://github.com/delananda30/rpsprediction/assets/71807981/0ab982e2-4969-464d-919c-46d96aa5246c)
+![Grafik Training](https://github.com/delananda30/rpsprediction/assets/71807981/0ab982e2-4969-464d-919c-46d96aa5246c)
 
 Hasil evaluasi pada subset test menunjukkan tingkat akurasi yang tinggi:
 ```plaintext
@@ -83,7 +83,9 @@ weighted avg       0.99      0.99      0.99       252
 ```
 Classification report pada subset test menegaskan kinerja yang sangat baik, dengan presisi, recall, dan f1-score di atas 99% untuk setiap kelas (paper, rock, scissors).
 
-Secara keseluruhan, model ini menggunakan konsep transfer learning dan arsitektur VGG19 untuk mencapai akurasi di atas 99% setelah pelatihan dan validasi. Keberhasilan ini menunjukkan kemampuan model dalam mengklasifikasikan gestur tangan pada permainan Batu-Gunting-Kertas.
+Secara keseluruhan, model ini menggunakan konsep transfer learning dan arsitektur VGG19 untuk
+
+ mencapai akurasi di atas 99% setelah pelatihan dan validasi. Keberhasilan ini menunjukkan kemampuan model dalam mengklasifikasikan gestur tangan pada permainan Batu-Gunting-Kertas.
 
 ## Aplikasi Web
 Repository ini berisi aplikasi web untuk memprediksi gestur tangan Batu-Gunting-Kertas (RPS) menggunakan model VGG19 yang telah dilatih sebelumnya. Struktur proyek ini mencakup direktori dan file-file berikut:
