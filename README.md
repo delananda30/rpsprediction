@@ -83,9 +83,7 @@ weighted avg       0.99      0.99      0.99       252
 ```
 Classification report pada subset test menegaskan kinerja yang sangat baik, dengan presisi, recall, dan f1-score di atas 99% untuk setiap kelas (paper, rock, scissors).
 
-Secara keseluruhan, model ini menggunakan konsep transfer learning dan arsitektur VGG19 untuk
-
- mencapai akurasi di atas 99% setelah pelatihan dan validasi. Keberhasilan ini menunjukkan kemampuan model dalam mengklasifikasikan gestur tangan pada permainan Batu-Gunting-Kertas.
+Secara keseluruhan, model ini menggunakan konsep transfer learning dan arsitektur VGG19 untuk mencapai akurasi di atas 99% setelah pelatihan dan validasi. Keberhasilan ini menunjukkan kemampuan model dalam mengklasifikasikan gestur tangan pada permainan Batu-Gunting-Kertas.
 
 ## Aplikasi Web
 Repository ini berisi aplikasi web untuk memprediksi gestur tangan Batu-Gunting-Kertas (RPS) menggunakan model VGG19 yang telah dilatih sebelumnya. Struktur proyek ini mencakup direktori dan file-file berikut:
