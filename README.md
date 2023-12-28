@@ -3,9 +3,7 @@ Repositori ini berisi proyek menggunakan model VGG19 yang telah dilatih sebelumn
 
 ## Dataset
 
-<div align="center">
-  <img src="https://github.com/delananda30/rpsprediction/raw/assets/71807981/d55bb033-48a4-42ff-b29d-08ddfab5eafc" width="100" alt="Image">
-</div>
+![image](https://github.com/delananda30/rpsprediction/assets/71807981/274e1e6e-ab01-4fdb-b9a8-8ba6467647d4)
 
 Dalam proyek ini, digunakan dataset berupa kumpulan citra gestur tangan yang mencakup tiga kategori utama: batu, gunting, dan kertas. Citra-citra ini merepresentasikan visual dari berbagai pose tangan, yang menjadi dasar pelatihan untuk model prediksi.
 
@@ -46,9 +44,8 @@ _________________________________________________________________
 ```
 Struktur model ini terdiri dari tiga lapisan utama, yaitu VGG19 sebagai base model, lapisan Global Average Pooling untuk meratakan output, dan dua lapisan Dense (fully connected) untuk klasifikasi tiga kategori gestur tangan: batu, gunting, dan kertas.
 
-<p align="center">
-  <img src="https://github.com/delananda30/rpsprediction/assets/71807981/aa17a316-774b-4d4f-9792-0a567b90c5d3" alt="Nama Deskripsi Gambar">
-</p>
+![image](https://github.com/delananda30/rpsprediction/assets/71807981/894a94a1-cd4f-4a64-a802-34e7a6126f85)
+
 
 Visualisasi plot model memberikan gambaran intuitif mengenai arsitektur dan hubungan antar lapisan dalam model tersebut.
 
