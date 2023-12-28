@@ -128,22 +128,15 @@ Repository ini berisi aplikasi web untuk memprediksi gestur tangan Batu-Gunting-
 
 Silakan sesuaikan konten, gaya, dan fungsionalitas berdasarkan preferensi dan kebutuhan proyek Anda.
 
-<img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/57c9c70a-0a44-4fff-a404-8ba100cbcabd">
+## Tampilan 
 
-<img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/bce4a427-45e2-40e0-bcbd-859b71a5ad02">
+Berikut adalah tampilan dari aplikasi web Prediksi Batu-Gunting-Kertas (RPS):
 
+![Tampilan Utama](https://github.com/delananda30/rpsprediction/assets/71807981/57c9c70a-0a44-4fff-a404-8ba100cbcabd)
 
-### Getting Started
-Install dependencies:
-```bash
-  pip install -r requirements.txt
-```
+![Hasil Prediksi](https://github.com/delananda30/rpsprediction/assets/71807981/bce4a427-45e2-40e0-bcbd-859b71a5ad02)
 
-Run the Flask application:
-```bash
-  flask run
-```
-Buka peramban web Anda dan buka http://localhost:5000 untuk berinteraksi dengan sistem prediksi RPS.
+Anda dapat melihat antarmuka pengguna yang sederhana dan intuitif untuk mengunggah gambar dan melihat hasil prediksi gestur tangan RPS.
 
 ## Authors
 - [Dela Ananda Setyarini](https://github.com/delananda30)
