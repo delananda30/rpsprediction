@@ -124,7 +124,7 @@ Repository ini berisi aplikasi web untuk memprediksi gestur tangan Batu-Gunting-
    flask run
    ```
 
-4. Buka web browser Anda dan kunjungi [http://localhost:2000](http://localhost:2000) untuk mengakses Aplikasi Web Prediksi Batu-Gunting-Kertas (RPS).
+4. Buka web browser Anda dan kunjungi [http://localhost:5000](http://localhost:5000) untuk mengakses Aplikasi Web Prediksi Batu-Gunting-Kertas (RPS).
 
 Silakan sesuaikan konten, gaya, dan fungsionalitas berdasarkan preferensi dan kebutuhan proyek Anda.
 
