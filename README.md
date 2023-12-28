@@ -44,7 +44,9 @@ _________________________________________________________________
 ```
 Struktur model ini terdiri dari tiga lapisan utama, yaitu VGG19 sebagai base model, lapisan Global Average Pooling untuk meratakan output, dan dua lapisan Dense (fully connected) untuk klasifikasi tiga kategori gestur tangan: batu, gunting, dan kertas.
 
-![image](https://github.com/delananda30/rpsprediction/assets/71807981/894a94a1-cd4f-4a64-a802-34e7a6126f85)
+<p align="center">
+  <img src="https://github.com/delananda30/rpsprediction/assets/71807981/aa17a316-774b-4d4f-9792-0a567b90c5d3" alt="Nama Deskripsi Gambar">
+</p>
 
 
 Visualisasi plot model memberikan gambaran intuitif mengenai arsitektur dan hubungan antar lapisan dalam model tersebut.
@@ -59,9 +61,7 @@ Epoch 10/10
 60/60 [==============================] - 46s 768ms/step - loss: 0.1384 - accuracy: 0.9614 - val_loss: 0.1320 - val_accuracy: 0.9683
 ```
 Berikut adalah grafik untuk menunjukkan perubahan loss dan akurasi pada setiap epoch selama pelatihan:
-<div align="center">
-  <img src="https://github.com/delananda30/rpsprediction/raw/assets/71807981/7569f7ae-9d8a-448a-8aa8-d6ff49e099ec" width="100" alt="Image">
-</div>
+![image](https://github.com/delananda30/rpsprediction/assets/71807981/0ab982e2-4969-464d-919c-46d96aa5246c)
 
 Hasil evaluasi pada subset test menunjukkan tingkat akurasi yang tinggi:
 ```plaintext
