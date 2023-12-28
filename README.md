@@ -128,7 +128,7 @@ Repository ini berisi aplikasi web untuk memprediksi gestur tangan Batu-Gunting-
 
 Silakan sesuaikan konten, gaya, dan fungsionalitas berdasarkan preferensi dan kebutuhan proyek Anda.
 
-## Tampilan 
+## Tampilan Aplikasi Web
 
 Berikut adalah tampilan dari aplikasi web Prediksi Batu-Gunting-Kertas (RPS):
 
