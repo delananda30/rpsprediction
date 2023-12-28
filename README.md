@@ -86,6 +86,47 @@ Classification report pada subset test menegaskan kinerja yang sangat baik, deng
 Secara keseluruhan, model ini menggunakan konsep transfer learning dan arsitektur VGG19 untuk mencapai akurasi di atas 99% setelah pelatihan dan validasi. Keberhasilan ini menunjukkan kemampuan model dalam mengklasifikasikan gestur tangan pada permainan Batu-Gunting-Kertas.
 
 ## Aplikasi Web
+Repository ini berisi aplikasi web untuk memprediksi gestur tangan Batu-Gunting-Kertas (RPS) menggunakan model VGG19 yang telah dilatih sebelumnya. Struktur proyek ini mencakup direktori dan file-file berikut:
+
+1. **_pycache_**: Direktori ini dapat berisi file Python yang telah dikompilasi (`.pyc`) yang dihasilkan oleh interpreter Python. Aman untuk mengabaikan folder ini saat berbagi atau melakukan commit ke version control.
+
+2. **model**: Direktori ini menyimpan model yang telah dilatih dalam format file Hierarchical Data Format (HDF5) dengan ekstensi `.h5`.
+
+3. **static**: Direktori ini berisi aset statis seperti Cascading Style Sheets (CSS) dan sumber daya tambahan.
+
+   - **css**: Subdirektori ini berisi stylesheet CSS untuk mempercantik halaman web.
+   - **assets**: Subdirektori ini menyimpan aset-aset lainnya, seperti gambar.
+
+4. **templates**: Direktori ini mencakup templat HTML untuk merender halaman-halaman web.
+
+   - **index.html**: Halaman utama untuk mengunggah gambar yang akan diprediksi.
+   - **result.html**: Halaman yang menampilkan hasil prediksi beserta akurasi dan waktu prediksi.
+
+5. **app.py**: Skrip Python ini berfungsi sebagai berkas aplikasi utama. Ini menggunakan kerangka kerja web Flask untuk membuat dan menjalankan aplikasi web. Skrip ini mencakup rute-rute yang diperlukan untuk menangani permintaan pengguna, mengunggah gambar, dan melakukan prediksi.
+
+6. **requirements.txt**: Berkas ini mencantumkan paket-paket Python dan versi-versi mereka yang diperlukan untuk menjalankan aplikasi. Pasang dependensi ini menggunakan perintah `pip install -r requirements.txt`.
+
+## Cara Menjalankan Aplikasi Web
+
+1. Clone repository:
+   ```bash
+   git clone https://github.com/username-anda/rps-prediction-web-app.git
+   cd rps-prediction-web-app
+   ```
+
+2. Pasang dependensi yang dibutuhkan:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Jalankan aplikasi Flask:
+   ```bash
+   python app.py
+   ```
+
+4. Buka web browser Anda dan kunjungi [http://localhost:2000](http://localhost:2000) untuk mengakses Aplikasi Web Prediksi Batu-Gunting-Kertas (RPS).
+
+Silakan sesuaikan konten, gaya, dan fungsionalitas berdasarkan preferensi dan kebutuhan proyek Anda.
 
 <img width="960" alt="image" src="https://github.com/delananda30/rpsprediction/assets/71807981/57c9c70a-0a44-4fff-a404-8ba100cbcabd">
 
