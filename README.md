@@ -60,7 +60,7 @@ Epoch 10/10
 ```
 Berikut adalah grafik untuk menunjukkan perubahan loss dan akurasi pada setiap epoch selama pelatihan:
 <div align="center">
-  <img src="https://github.com/delananda30/rpsprediction/raw/assets/71807981/7569f7ae-9d8a-448a-8aa8-d6ff49e099ec" width="200" alt="Image">
+  <img src="https://github.com/delananda30/rpsprediction/raw/assets/71807981/7569f7ae-9d8a-448a-8aa8-d6ff49e099ec" width="100" alt="Image">
 </div>
 
 Hasil evaluasi pada subset test menunjukkan tingkat akurasi yang tinggi:
