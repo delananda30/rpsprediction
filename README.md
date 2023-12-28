@@ -110,8 +110,8 @@ Repository ini berisi aplikasi web untuk memprediksi gestur tangan Batu-Gunting-
 
 1. Clone repository:
    ```bash
-   git clone https://github.com/username-anda/rps-prediction-web-app.git
-   cd rps-prediction-web-app
+   git clone https://github.com/delananda30/rpsprediction.git
+   cd rpsprediction
    ```
 
 2. Pasang dependensi yang dibutuhkan:
@@ -121,7 +121,7 @@ Repository ini berisi aplikasi web untuk memprediksi gestur tangan Batu-Gunting-
 
 3. Jalankan aplikasi Flask:
    ```bash
-   python app.py
+   flask run
    ```
 
 4. Buka web browser Anda dan kunjungi [http://localhost:2000](http://localhost:2000) untuk mengakses Aplikasi Web Prediksi Batu-Gunting-Kertas (RPS).
